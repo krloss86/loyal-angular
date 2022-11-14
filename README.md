@@ -1,4 +1,3 @@
 # loyal-angular
 curso angular loyal
-# clase1 
-## cambio creamos rama feature/clase1
+# Clase1 : git + comandos

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--todo el contenido debe ir dentro del main-->
+    <main>
+        <!--menu-->
+        <header>
+            <!--elementos de menu-->
+            <nav>
+                <li>
+                    <a href="index.html">
+                        Volver
+                    </a>
+                </li>   
+            </nav>
+        </header>
+        <section>
+            <!--formulario-->
+            <fieldset>
+                <legend>Formularios</legend>
+                <form action="endpoint.html" method="get">
+                    <label>Username</label>
+                    <input type="text" 
+                        name="username"
+                        id="username"
+                        required
+                        >
+                    <label>Password</label>
+                    <input type="password"
+                        name="password"
+                        id="password"
+                        required
+                    >
+                    <label>Rango edad</label>
+                    <input type="number" 
+                        step="5" 
+                        min="0"
+                        max="15"
+                        required
+                    >
+                    <hr>
+                    <label>Equipo de futbol</label>
+                    <select required>
+                        <option></option>
+                        <option>Arg</option>
+                        <option>Bra</option>
+                        <option>Esp</option>
+                    </select>
+                    <hr>
+                    <label>Turno</label>
+                    Mañana: <input type="checkbox" 
+                        value="M" 
+                        name="manana">
+                    Noche: <input type="checkbox" 
+                        value="N"
+                        name="noche">
+                    <hr>
+                    <label>Es de river?</label>
+                    SI: <input type="radio" 
+                        value="SI"
+                        name="esderiver">
+                    NO: <input type="radio" 
+                        value="NO"
+                        name="esderiver"
+                    >
+                    <hr>
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </form>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Tablas</legend>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>
+                                Col1
+                            </th>
+                            <th>
+                                Col2
+                            </th>
+                            <th>
+                                Col3
+                            </th>
+                            <th>
+                                &nbsp;
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--fila1-->
+                        <tr>
+                            <!--fila1, col1-->
+                            <td>
+                                fila1 col1
+                            </td>
+                            <!--fila1, col2-->
+                            <td>
+                                fila1, col2
+                            </td>
+                            <td>
+                                fila1, col3
+                            </td>
+                            <td>
+                                <button>
+                                    Eliminar
+                                </button>
+                                <a href="#">
+                                    Editar
+                                </a>
+                                <img src="descarga.jfif" 
+                                    width="50"
+                                    height="50">
+                            </td>
+                        </tr>
+                        <!--fila1-->
+                        <tr>
+                            <!--fila1, col1-3 -->
+                            <td colspan="3">
+                                fila1 col1-3
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                total $124
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </fieldset>
+        </section>
+        <!--puedo tener cuantos section quiera-->
+    </main>
+    <aside>
+        <!--publicidad-->
+    </aside>
+    <footer>
+        <!-- el pie de pagina de un sitio-->
+    </footer>
+</body>
+</html>

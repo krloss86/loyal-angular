@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*selector universal permite aplicat estilos globales, que aplican a todos
+        los tags*/
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100px;
+            height: 100px;
+
+            padding: 10px 5px 2px 15px;
+            border: 5px solid red;
+            margin: 10px 5px 15px 2px;
+            display: inline-block;
+            box-sizing: content-box;
+        }
+
+        /*herencia de estilos*/
+        .contenedor__texto #contenedor__caja p {
+            color:blue;
+        }
+
+        .lista {
+            font-size: 2rem;
+        }
+
+        .lista li:first-child {
+            color:blueviolet !important;
+        }
+
+        .lista li:last-child {
+            color:aqua !important; 
+        }
+
+        /*aplica a los pares*/
+        .lista li:nth-child(even) {/*par*/
+            color:red;
+        }
+        .lista li:nth-child(odd) {/*impar*/
+            color:rgb(34, 255, 0);
+        }
+
+        /**/
+        .lista-hermanos > li > a {
+            font-size: 4rem; /*px|em|rem|% ?*/
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+
+        </header>
+        <body>
+            <section>
+                <h2>Modelo de caja</h2>
+                <div class="container">
+                    Clase2
+                </div>
+                <div class="container">
+                    Clase 22
+                </div>
+            </section>
+            <section class="contenedor__texto">
+                <p>
+                    texto bla bla
+                </p>
+                <div id="contenedor__caja">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti sunt fugiat, neque odit ut eos quam officia nobis repellendus, suscipit fugit assumenda ipsum illo totam, possimus ad praesentium debitis quod.
+                    </p>
+                </div>
+                <p>
+                    otro texto
+                </p>
+            </section>
+            <hr>
+            <section>  
+                <!--lista no ordenada -->
+                <ul class="lista">
+                    <li>
+                        link 1
+                    </li>
+                    <li>
+                        link 2
+                    </li>
+                    <li>
+                        link 3
+                    </li>
+                    <li>
+                        link 4
+                    </li>
+                    <li>
+                        link 5
+                    </li>
+                    <li>
+                        link 6
+                    </li>
+                    <li>
+                        link 7
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section>  
+                <!--lista no ordenada -->
+                <ul class="lista-hermanos">
+                    <li>
+                        <a> 
+                            link 1
+                        </a>
+                    </li>
+                    <li>
+                        link 2
+                    </li>
+                    <li>
+                        link 3
+                    </li>
+                </ul>
+            </section>
+        </body>
+    </main>
+</body>
+</html>

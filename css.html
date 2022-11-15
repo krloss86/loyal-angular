@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1: forma: interna --> 
+    <style>    
+        /*es un comentario css*/
+        
+        /*selector de etiqueta*/
+        /*regla css */
+        /*selctor*/
+        /*
+        body {
+            background-color: black !important;
+            color: white;
+        }
+        h2 {
+            color: lightblue;
+        }
+        ul {
+            color: yellow
+        }
+
+        ul::first-letter {
+            color: aqua;
+        }*/
+    </style>
+    <!-- vinculo un archivo externo (estilos)-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- 2 forma: inline-->
+<!-- para newsletter-->
+<body> 
+    <main>
+        <section>
+            <h1>
+                Estilos css
+            </h1>
+            <ul class="claseul">
+                <li>
+                    1- interna: <b>&lt;style&gt;...&lt;/style&gt;</b>
+                </li>
+                <li>
+                    2- inline: usando el atributo style=""
+                </li>
+                <li>
+                    3- externa: &lt;link rel="" jhref="archivo.css"&gt; 
+                </li>
+            </ul>
+
+            <h2>
+                Especificidad
+            </h2>
+            <ol>
+                <li>
+                    !importan
+                </li>
+                <li>
+                    inline
+                </li>
+                <li id="ultimoli">
+                    orden en que lo cargan
+                </li>
+            </ol>
+            <a href="./modelo-caja.html">Ir a modelo de caja</a>
+        </section>
+    </main>
+</body>
+</html>

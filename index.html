@@ -6,59 +6,81 @@
         <title>
             Curso Angular - Html+css+js
         </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
 
     <body>
-        <!--menu-->
-        <nav>
-            <!-- lista de elementos-->
-            <ul>
-                 <li>
-                    <a href="html.html">
-                        html
-                    </a>
-                 </li>   
-                 <li>
-                    <a href="css.html">
-                        css
-                    </a>
-                 </li>
-                 <li>
-                    <a href="js.html">
-                        js
-                    </a>
-                 </li>   
-            </ul>
-        </nav>
-
-        <!-- lo ve el usuario
-        <etiqueta 
-            atributo="valor" 
-            atributoN="valorn"
-            atributo2="valor2" 
-        >
-            contenido
-        </etiqueta>
-    -->
-        <h1>Titulo de la página</h1>
-        <h2>subtitulo</h2>
-        <h6>h6</h6>
-        <hr>
-        <a href="https://www.google.com.ar"
-            target="_blank">
-            Ir a google.com
-        </a>
-        <button>
-            Soy un boton
-        </button>
-        <p>
-            html tiene elementos de bloque e inline
-        </p>
-        <p>
-            html tiene elementos de bloque e inline
-        </p>
-        <hr>
-        <img src="descarga.jfif"/>
+        <main>
+             <!--menu-->
+                <nav>
+                    <!-- lista de elementos-->
+                    <ul>
+                        <li>
+                            <a href="html.html">
+                                html
+                            </a>
+                        </li>   
+                        <li>
+                            <a href="css.html">
+                                css
+                            </a>
+                        </li>
+                        <li>
+                            <a href="js.html">
+                                js
+                            </a>
+                        </li>   
+                    </ul>
+                </nav>
+            <section>
+                <div class="container">
+                    <div class="row p-2">
+                        <div class="col-sm-6 col-md-8 col-lg-5 col-xl-3 col-xxl-2">
+                            div con 12 columnas
+                            <div class="w-100">
+                                50%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="descarga.jfif" class="d-block w-50" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="descarga.jfif" class="d-block w-50" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="descarga.jfif" class="d-block w-50" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            div con 4 columnas
+                        </div>
+                        <div class="col-4">
+                            div con 4 columnas
+                        </div>
+                        <div class="col-4">
+                            div con 4 columnas
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
-
 </html>
